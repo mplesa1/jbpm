@@ -1,0 +1,1 @@
+{"id":"f300be38-8122-478c-8638-fbb65c252335","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"eVrtic.Upisdjetetauvrtic","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
