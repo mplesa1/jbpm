@@ -6,12 +6,93 @@ package com.myspace.evrtic;
 
 public class Dijete implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Dijete() {
-    }
+	@org.kie.api.definition.type.Label(value = "Id djeteta")
+	private java.lang.Long idDjeteta;
+	@org.kie.api.definition.type.Label(value = "Ime Djeteta")
+	private java.lang.String imeDjeteta;
+	@org.kie.api.definition.type.Label(value = "Prezime djeteta")
+	private java.lang.Short prezimeDjeteta;
+	@org.kie.api.definition.type.Label(value = "Datum rođenja djeteta")
+	private java.util.Date datumRodenjaDjeteta;
+	@org.kie.api.definition.type.Label(value = "Spol djeteta")
+	private int spolDjeteta;
+	@org.kie.api.definition.type.Label(value = "OIB djeteta")
+	private java.lang.Long oibDjeteta;
+	@org.kie.api.definition.type.Label(value = "Adresa djeteta")
+	private java.lang.String adresaDjeteta;
 
+	public Dijete() {
+	}
 
+	public java.lang.Long getIdDjeteta() {
+		return this.idDjeteta;
+	}
 
+	public void setIdDjeteta(java.lang.Long idDjeteta) {
+		this.idDjeteta = idDjeteta;
+	}
+
+	public java.lang.String getImeDjeteta() {
+		return this.imeDjeteta;
+	}
+
+	public void setImeDjeteta(java.lang.String imeDjeteta) {
+		this.imeDjeteta = imeDjeteta;
+	}
+
+	public java.lang.Short getPrezimeDjeteta() {
+		return this.prezimeDjeteta;
+	}
+
+	public void setPrezimeDjeteta(java.lang.Short prezimeDjeteta) {
+		this.prezimeDjeteta = prezimeDjeteta;
+	}
+
+	public java.util.Date getDatumRodenjaDjeteta() {
+		return this.datumRodenjaDjeteta;
+	}
+
+	public void setDatumRodenjaDjeteta(java.util.Date datumRodenjaDjeteta) {
+		this.datumRodenjaDjeteta = datumRodenjaDjeteta;
+	}
+
+	public int getSpolDjeteta() {
+		return this.spolDjeteta;
+	}
+
+	public void setSpolDjeteta(int spolDjeteta) {
+		this.spolDjeteta = spolDjeteta;
+	}
+
+	public java.lang.Long getOibDjeteta() {
+		return this.oibDjeteta;
+	}
+
+	public void setOibDjeteta(java.lang.Long oibDjeteta) {
+		this.oibDjeteta = oibDjeteta;
+	}
+
+	public java.lang.String getAdresaDjeteta() {
+		return this.adresaDjeteta;
+	}
+
+	public void setAdresaDjeteta(java.lang.String adresaDjeteta) {
+		this.adresaDjeteta = adresaDjeteta;
+	}
+
+	public Dijete(java.lang.Long idDjeteta, java.lang.String imeDjeteta,
+			java.lang.Short prezimeDjeteta, java.util.Date datumRodenjaDjeteta,
+			int spolDjeteta, java.lang.Long oibDjeteta,
+			java.lang.String adresaDjeteta) {
+		this.idDjeteta = idDjeteta;
+		this.imeDjeteta = imeDjeteta;
+		this.prezimeDjeteta = prezimeDjeteta;
+		this.datumRodenjaDjeteta = datumRodenjaDjeteta;
+		this.spolDjeteta = spolDjeteta;
+		this.oibDjeteta = oibDjeteta;
+		this.adresaDjeteta = adresaDjeteta;
+	}
 
 }
