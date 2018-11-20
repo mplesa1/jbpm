@@ -6,12 +6,116 @@ package com.myspace.evrtic;
 
 public class Roditelj implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Roditelj() {
-    }
+	@org.kie.api.definition.type.Label(value = "Id roditelja")
+	private java.lang.Long idRoditelja;
+	@org.kie.api.definition.type.Label(value = "Ime majke")
+	private java.lang.String imeMajke;
+	@org.kie.api.definition.type.Label(value = "Prezime majke")
+	private java.lang.String prezimeMajke;
+	@org.kie.api.definition.type.Label(value = "Majka zaposlena")
+	private java.lang.Boolean majkaZaposlena;
+	@org.kie.api.definition.type.Label(value = "OIB majke")
+	private java.lang.Long oibMajke;
+	@org.kie.api.definition.type.Label(value = "Ime oca")
+	private java.lang.String imeOca;
+	@org.kie.api.definition.type.Label(value = "Prezime oca")
+	private java.lang.String prezimeOca;
+	@org.kie.api.definition.type.Label(value = "Otac zaposlen")
+	private java.lang.Boolean otacZaposlen;
+	@org.kie.api.definition.type.Label(value = "OIB oca")
+	private java.lang.Long oibOca;
 
+	public Roditelj() {
+	}
 
+	public java.lang.Long getIdRoditelja() {
+		return this.idRoditelja;
+	}
 
+	public void setIdRoditelja(java.lang.Long idRoditelja) {
+		this.idRoditelja = idRoditelja;
+	}
+
+	public java.lang.String getImeMajke() {
+		return this.imeMajke;
+	}
+
+	public void setImeMajke(java.lang.String imeMajke) {
+		this.imeMajke = imeMajke;
+	}
+
+	public java.lang.String getPrezimeMajke() {
+		return this.prezimeMajke;
+	}
+
+	public void setPrezimeMajke(java.lang.String prezimeMajke) {
+		this.prezimeMajke = prezimeMajke;
+	}
+
+	public java.lang.Boolean getMajkaZaposlena() {
+		return this.majkaZaposlena;
+	}
+
+	public void setMajkaZaposlena(java.lang.Boolean majkaZaposlena) {
+		this.majkaZaposlena = majkaZaposlena;
+	}
+
+	public java.lang.Long getOibMajke() {
+		return this.oibMajke;
+	}
+
+	public void setOibMajke(java.lang.Long oibMajke) {
+		this.oibMajke = oibMajke;
+	}
+
+	public java.lang.String getImeOca() {
+		return this.imeOca;
+	}
+
+	public void setImeOca(java.lang.String imeOca) {
+		this.imeOca = imeOca;
+	}
+
+	public java.lang.String getPrezimeOca() {
+		return this.prezimeOca;
+	}
+
+	public void setPrezimeOca(java.lang.String prezimeOca) {
+		this.prezimeOca = prezimeOca;
+	}
+
+	public java.lang.Boolean getOtacZaposlen() {
+		return this.otacZaposlen;
+	}
+
+	public void setOtacZaposlen(java.lang.Boolean otacZaposlen) {
+		this.otacZaposlen = otacZaposlen;
+	}
+
+	public java.lang.Long getOibOca() {
+		return this.oibOca;
+	}
+
+	public void setOibOca(java.lang.Long oibOca) {
+		this.oibOca = oibOca;
+	}
+
+	public Roditelj(java.lang.Long idRoditelja, java.lang.String imeMajke,
+			java.lang.String prezimeMajke, java.lang.Boolean majkaZaposlena,
+			java.lang.Long oibMajke, java.lang.String imeOca,
+			java.lang.String prezimeOca, java.lang.Boolean otacZaposlen,
+			java.lang.Long oibOca) {
+		this.idRoditelja = idRoditelja;
+		this.imeMajke = imeMajke;
+		this.prezimeMajke = prezimeMajke;
+		this.majkaZaposlena = majkaZaposlena;
+		this.oibMajke = oibMajke;
+		this.imeOca = imeOca;
+		this.prezimeOca = prezimeOca;
+		this.otacZaposlen = otacZaposlen;
+		this.oibOca = oibOca;
+	}
 
 }
