@@ -6,12 +6,47 @@ package com.myspace.evrtic;
 
 public class Dokument implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Dokument() {
-    }
+	@org.kie.api.definition.type.Label(value = "ID dokumenta")
+	private int idDokumenta;
+	@org.kie.api.definition.type.Label(value = "Dokument")
+	private java.util.List<java.lang.String> dokument;
+	@org.kie.api.definition.type.Label(value = "Opis dokumenta")
+	private java.util.List<java.lang.String> opisDokumenta;
 
+	public Dokument() {
+	}
 
+	public int getIdDokumenta() {
+		return this.idDokumenta;
+	}
 
+	public void setIdDokumenta(int idDokumenta) {
+		this.idDokumenta = idDokumenta;
+	}
+
+	public java.util.List<java.lang.String> getDokument() {
+		return this.dokument;
+	}
+
+	public void setDokument(java.util.List<java.lang.String> dokument) {
+		this.dokument = dokument;
+	}
+
+	public java.util.List<java.lang.String> getOpisDokumenta() {
+		return this.opisDokumenta;
+	}
+
+	public void setOpisDokumenta(java.util.List<java.lang.String> opisDokumenta) {
+		this.opisDokumenta = opisDokumenta;
+	}
+
+	public Dokument(int idDokumenta, java.util.List<java.lang.String> dokument,
+			java.util.List<java.lang.String> opisDokumenta) {
+		this.idDokumenta = idDokumenta;
+		this.dokument = dokument;
+		this.opisDokumenta = opisDokumenta;
+	}
 
 }
