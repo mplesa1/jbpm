@@ -6,12 +6,60 @@ package com.myspace.evrtic;
 
 public class Intervju implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Intervju() {
-    }
+	@org.kie.api.definition.type.Label(value = "ID intervjua")
+	private int idIntervjua;
+	@org.kie.api.definition.type.Label(value = "Podaci zahtjeva")
+	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
+	@org.kie.api.definition.type.Label(value = "Datum intervjua")
+	private java.util.Date datumIntervjua;
+	@org.kie.api.definition.type.Label(value = "Pristali na uvjete")
+	private boolean pristaliNaUvjete;
 
+	public Intervju() {
+	}
 
+	public int getIdIntervjua() {
+		return this.idIntervjua;
+	}
 
+	public void setIdIntervjua(int idIntervjua) {
+		this.idIntervjua = idIntervjua;
+	}
+
+	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
+		return this.podaciZahtjeva;
+	}
+
+	public void setPodaciZahtjeva(
+			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
+		this.podaciZahtjeva = podaciZahtjeva;
+	}
+
+	public java.util.Date getDatumIntervjua() {
+		return this.datumIntervjua;
+	}
+
+	public void setDatumIntervjua(java.util.Date datumIntervjua) {
+		this.datumIntervjua = datumIntervjua;
+	}
+
+	public boolean isPristaliNaUvjete() {
+		return this.pristaliNaUvjete;
+	}
+
+	public void setPristaliNaUvjete(boolean pristaliNaUvjete) {
+		this.pristaliNaUvjete = pristaliNaUvjete;
+	}
+
+	public Intervju(int idIntervjua,
+			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva,
+			java.util.Date datumIntervjua, boolean pristaliNaUvjete) {
+		this.idIntervjua = idIntervjua;
+		this.podaciZahtjeva = podaciZahtjeva;
+		this.datumIntervjua = datumIntervjua;
+		this.pristaliNaUvjete = pristaliNaUvjete;
+	}
 
 }
