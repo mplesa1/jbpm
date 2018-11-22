@@ -8,10 +8,16 @@ public class RangLista implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id rang liste")
+	@org.kie.api.definition.type.Label("Id rang liste")
 	private int idRangListe;
-	@org.kie.api.definition.type.Label(value = "Kvota")
+	@org.kie.api.definition.type.Label("Kvota")
 	private int kvota;
+
+	@org.kie.api.definition.type.Label(value = "Podaci zahtjeva")
+	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
+
+	@org.kie.api.definition.type.Label(value = "Bodovi Zahtjeva")
+	private int bodoviZahtjeva;
 
 	public RangLista() {
 	}
@@ -32,9 +38,29 @@ public class RangLista implements java.io.Serializable {
 		this.kvota = kvota;
 	}
 
-	public RangLista(int idRangListe, int kvota) {
+	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
+		return this.podaciZahtjeva;
+	}
+
+	public void setPodaciZahtjeva(
+			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
+		this.podaciZahtjeva = podaciZahtjeva;
+	}
+
+	public int getBodoviZahtjeva() {
+		return this.bodoviZahtjeva;
+	}
+
+	public void setBodoviZahtjeva(int bodoviZahtjeva) {
+		this.bodoviZahtjeva = bodoviZahtjeva;
+	}
+
+	public RangLista(int idRangListe, int kvota,
+			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva, int bodoviZahtjeva) {
 		this.idRangListe = idRangListe;
 		this.kvota = kvota;
+		this.podaciZahtjeva = podaciZahtjeva;
+		this.bodoviZahtjeva = bodoviZahtjeva;
 	}
 
 }
