@@ -6,12 +6,35 @@ package com.myspace.evrtic;
 
 public class RangLista implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public RangLista() {
-    }
+	@org.kie.api.definition.type.Label(value = "Id rang liste")
+	private int idRangListe;
+	@org.kie.api.definition.type.Label(value = "Kvota")
+	private int kvota;
 
+	public RangLista() {
+	}
 
+	public int getIdRangListe() {
+		return this.idRangListe;
+	}
 
+	public void setIdRangListe(int idRangListe) {
+		this.idRangListe = idRangListe;
+	}
+
+	public int getKvota() {
+		return this.kvota;
+	}
+
+	public void setKvota(int kvota) {
+		this.kvota = kvota;
+	}
+
+	public RangLista(int idRangListe, int kvota) {
+		this.idRangListe = idRangListe;
+		this.kvota = kvota;
+	}
 
 }
