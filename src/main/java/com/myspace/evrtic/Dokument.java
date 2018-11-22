@@ -8,12 +8,15 @@ public class Dokument implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "ID dokumenta")
+	@org.kie.api.definition.type.Label("ID dokumenta")
 	private int idDokumenta;
-	@org.kie.api.definition.type.Label(value = "Dokument")
-	private java.util.List<java.lang.String> dokument;
-	@org.kie.api.definition.type.Label(value = "Opis dokumenta")
-	private java.util.List<java.lang.String> opisDokumenta;
+	@org.kie.api.definition.type.Label("Dokument")
+	private String dokument;
+	@org.kie.api.definition.type.Label("Opis dokumenta")
+	private String opisDokumenta;
+
+	@org.kie.api.definition.type.Label(value = "Bodovi dokumenta")
+	private int bodoviDokumenta;
 
 	public Dokument() {
 	}
@@ -26,27 +29,36 @@ public class Dokument implements java.io.Serializable {
 		this.idDokumenta = idDokumenta;
 	}
 
-	public java.util.List<java.lang.String> getDokument() {
+	public java.lang.String getDokument() {
 		return this.dokument;
 	}
 
-	public void setDokument(java.util.List<java.lang.String> dokument) {
+	public void setDokument(java.lang.String dokument) {
 		this.dokument = dokument;
 	}
 
-	public java.util.List<java.lang.String> getOpisDokumenta() {
+	public java.lang.String getOpisDokumenta() {
 		return this.opisDokumenta;
 	}
 
-	public void setOpisDokumenta(java.util.List<java.lang.String> opisDokumenta) {
+	public void setOpisDokumenta(java.lang.String opisDokumenta) {
 		this.opisDokumenta = opisDokumenta;
 	}
 
-	public Dokument(int idDokumenta, java.util.List<java.lang.String> dokument,
-			java.util.List<java.lang.String> opisDokumenta) {
+	public int getBodoviDokumenta() {
+		return this.bodoviDokumenta;
+	}
+
+	public void setBodoviDokumenta(int bodoviDokumenta) {
+		this.bodoviDokumenta = bodoviDokumenta;
+	}
+
+	public Dokument(int idDokumenta, java.lang.String dokument,
+			java.lang.String opisDokumenta, int bodoviDokumenta) {
 		this.idDokumenta = idDokumenta;
 		this.dokument = dokument;
 		this.opisDokumenta = opisDokumenta;
+		this.bodoviDokumenta = bodoviDokumenta;
 	}
 
 }
