@@ -8,12 +8,15 @@ public class PodaciZahtjeva implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "ID podataka zahtjeva")
+	@org.kie.api.definition.type.Label("ID podataka zahtjeva")
 	private int idPodatakaZahtjeva;
-	@org.kie.api.definition.type.Label(value = "Lista dokumenata")
+	@org.kie.api.definition.type.Label("Lista dokumenata")
 	private java.util.List<com.myspace.evrtic.Dokument> listaDokumenata;
-	@org.kie.api.definition.type.Label(value = "Zahtjev za upis")
+	@org.kie.api.definition.type.Label("Zahtjev za upis")
 	private com.myspace.evrtic.ZahtjevZaUpis zahtjevZaUpis;
+
+	@org.kie.api.definition.type.Label(value = "Ukupan broj bodova")
+	private int ukupanBrojBodova;
 
 	public PodaciZahtjeva() {
 	}
@@ -43,12 +46,21 @@ public class PodaciZahtjeva implements java.io.Serializable {
 		this.zahtjevZaUpis = zahtjevZaUpis;
 	}
 
+	public int getUkupanBrojBodova() {
+		return this.ukupanBrojBodova;
+	}
+
+	public void setUkupanBrojBodova(int ukupanBrojBodova) {
+		this.ukupanBrojBodova = ukupanBrojBodova;
+	}
+
 	public PodaciZahtjeva(int idPodatakaZahtjeva,
 			java.util.List<com.myspace.evrtic.Dokument> listaDokumenata,
-			com.myspace.evrtic.ZahtjevZaUpis zahtjevZaUpis) {
+			com.myspace.evrtic.ZahtjevZaUpis zahtjevZaUpis, int ukupanBrojBodova) {
 		this.idPodatakaZahtjeva = idPodatakaZahtjeva;
 		this.listaDokumenata = listaDokumenata;
 		this.zahtjevZaUpis = zahtjevZaUpis;
+		this.ukupanBrojBodova = ukupanBrojBodova;
 	}
 
 }
