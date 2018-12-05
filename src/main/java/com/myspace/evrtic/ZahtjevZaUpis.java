@@ -12,16 +12,13 @@ public class ZahtjevZaUpis implements java.io.Serializable {
 	private java.lang.String odabraniVrtic;
 	@org.kie.api.definition.type.Label("Odabrani program")
 	private java.lang.String odabraniProgram;
-	@org.kie.api.definition.type.Label(value = "Id zahtjeva za upis")
-	private java.lang.Long idZahtjevaZaUpis;
-
-	@org.kie.api.definition.type.Label(value = "Datum slanja zahtjeva za upis")
+	@org.kie.api.definition.type.Label("Datum slanja zahtjeva za upis")
 	private java.util.Date datumSlanjaZahtjevaZaUpis;
 
-	@org.kie.api.definition.type.Label(value = "Dijete")
+	@org.kie.api.definition.type.Label("Dijete")
 	private com.myspace.evrtic.Dijete dijete;
 
-	@org.kie.api.definition.type.Label(value = "Roditelj")
+	@org.kie.api.definition.type.Label("Roditelj")
 	private com.myspace.evrtic.Roditelj roditelj;
 
 	public ZahtjevZaUpis() {
@@ -41,14 +38,6 @@ public class ZahtjevZaUpis implements java.io.Serializable {
 
 	public void setOdabraniProgram(java.lang.String odabraniProgram) {
 		this.odabraniProgram = odabraniProgram;
-	}
-
-	public java.lang.Long getIdZahtjevaZaUpis() {
-		return this.idZahtjevaZaUpis;
-	}
-
-	public void setIdZahtjevaZaUpis(java.lang.Long idZahtjevaZaUpis) {
-		this.idZahtjevaZaUpis = idZahtjevaZaUpis;
 	}
 
 	public java.util.Date getDatumSlanjaZahtjevaZaUpis() {
@@ -77,13 +66,12 @@ public class ZahtjevZaUpis implements java.io.Serializable {
 	}
 
 	public ZahtjevZaUpis(java.lang.String odabraniVrtic,
-			java.lang.String odabraniProgram, java.lang.Long idZahtjevaZaUpis,
+			java.lang.String odabraniProgram,
 			java.util.Date datumSlanjaZahtjevaZaUpis,
 			com.myspace.evrtic.Dijete dijete,
 			com.myspace.evrtic.Roditelj roditelj) {
 		this.odabraniVrtic = odabraniVrtic;
 		this.odabraniProgram = odabraniProgram;
-		this.idZahtjevaZaUpis = idZahtjevaZaUpis;
 		this.datumSlanjaZahtjevaZaUpis = datumSlanjaZahtjevaZaUpis;
 		this.dijete = dijete;
 		this.roditelj = roditelj;
