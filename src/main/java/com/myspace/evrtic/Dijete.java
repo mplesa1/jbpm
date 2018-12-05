@@ -8,30 +8,20 @@ public class Dijete implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id djeteta")
-	private java.lang.Long idDjeteta;
-	@org.kie.api.definition.type.Label(value = "Ime Djeteta")
+	@org.kie.api.definition.type.Label("Ime Djeteta")
 	private java.lang.String imeDjeteta;
-	@org.kie.api.definition.type.Label(value = "Prezime djeteta")
-	private java.lang.Short prezimeDjeteta;
-	@org.kie.api.definition.type.Label(value = "Datum rođenja djeteta")
+	@org.kie.api.definition.type.Label("Prezime djeteta")
+	private String prezimeDjeteta;
+	@org.kie.api.definition.type.Label("Datum rođenja djeteta")
 	private java.util.Date datumRodenjaDjeteta;
-	@org.kie.api.definition.type.Label(value = "Spol djeteta")
+	@org.kie.api.definition.type.Label("Spol djeteta")
 	private int spolDjeteta;
-	@org.kie.api.definition.type.Label(value = "OIB djeteta")
+	@org.kie.api.definition.type.Label("OIB djeteta")
 	private java.lang.Long oibDjeteta;
-	@org.kie.api.definition.type.Label(value = "Adresa djeteta")
+	@org.kie.api.definition.type.Label("Adresa djeteta")
 	private java.lang.String adresaDjeteta;
 
 	public Dijete() {
-	}
-
-	public java.lang.Long getIdDjeteta() {
-		return this.idDjeteta;
-	}
-
-	public void setIdDjeteta(java.lang.Long idDjeteta) {
-		this.idDjeteta = idDjeteta;
 	}
 
 	public java.lang.String getImeDjeteta() {
@@ -40,14 +30,6 @@ public class Dijete implements java.io.Serializable {
 
 	public void setImeDjeteta(java.lang.String imeDjeteta) {
 		this.imeDjeteta = imeDjeteta;
-	}
-
-	public java.lang.Short getPrezimeDjeteta() {
-		return this.prezimeDjeteta;
-	}
-
-	public void setPrezimeDjeteta(java.lang.Short prezimeDjeteta) {
-		this.prezimeDjeteta = prezimeDjeteta;
 	}
 
 	public java.util.Date getDatumRodenjaDjeteta() {
@@ -82,11 +64,17 @@ public class Dijete implements java.io.Serializable {
 		this.adresaDjeteta = adresaDjeteta;
 	}
 
-	public Dijete(java.lang.Long idDjeteta, java.lang.String imeDjeteta,
-			java.lang.Short prezimeDjeteta, java.util.Date datumRodenjaDjeteta,
-			int spolDjeteta, java.lang.Long oibDjeteta,
-			java.lang.String adresaDjeteta) {
-		this.idDjeteta = idDjeteta;
+	public java.lang.String getPrezimeDjeteta() {
+		return this.prezimeDjeteta;
+	}
+
+	public void setPrezimeDjeteta(java.lang.String prezimeDjeteta) {
+		this.prezimeDjeteta = prezimeDjeteta;
+	}
+
+	public Dijete(java.lang.String imeDjeteta, java.lang.String prezimeDjeteta,
+			java.util.Date datumRodenjaDjeteta, int spolDjeteta,
+			java.lang.Long oibDjeteta, java.lang.String adresaDjeteta) {
 		this.imeDjeteta = imeDjeteta;
 		this.prezimeDjeteta = prezimeDjeteta;
 		this.datumRodenjaDjeteta = datumRodenjaDjeteta;
