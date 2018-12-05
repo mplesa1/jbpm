@@ -8,34 +8,24 @@ public class Roditelj implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id roditelja")
-	private java.lang.Long idRoditelja;
-	@org.kie.api.definition.type.Label(value = "Ime majke")
+	@org.kie.api.definition.type.Label("Ime majke")
 	private java.lang.String imeMajke;
-	@org.kie.api.definition.type.Label(value = "Prezime majke")
+	@org.kie.api.definition.type.Label("Prezime majke")
 	private java.lang.String prezimeMajke;
-	@org.kie.api.definition.type.Label(value = "Majka zaposlena")
+	@org.kie.api.definition.type.Label("Majka zaposlena")
 	private java.lang.Boolean majkaZaposlena;
-	@org.kie.api.definition.type.Label(value = "OIB majke")
+	@org.kie.api.definition.type.Label("OIB majke")
 	private java.lang.Long oibMajke;
-	@org.kie.api.definition.type.Label(value = "Ime oca")
+	@org.kie.api.definition.type.Label("Ime oca")
 	private java.lang.String imeOca;
-	@org.kie.api.definition.type.Label(value = "Prezime oca")
+	@org.kie.api.definition.type.Label("Prezime oca")
 	private java.lang.String prezimeOca;
-	@org.kie.api.definition.type.Label(value = "Otac zaposlen")
+	@org.kie.api.definition.type.Label("Otac zaposlen")
 	private java.lang.Boolean otacZaposlen;
-	@org.kie.api.definition.type.Label(value = "OIB oca")
+	@org.kie.api.definition.type.Label("OIB oca")
 	private java.lang.Long oibOca;
 
 	public Roditelj() {
-	}
-
-	public java.lang.Long getIdRoditelja() {
-		return this.idRoditelja;
-	}
-
-	public void setIdRoditelja(java.lang.Long idRoditelja) {
-		this.idRoditelja = idRoditelja;
 	}
 
 	public java.lang.String getImeMajke() {
@@ -102,12 +92,10 @@ public class Roditelj implements java.io.Serializable {
 		this.oibOca = oibOca;
 	}
 
-	public Roditelj(java.lang.Long idRoditelja, java.lang.String imeMajke,
-			java.lang.String prezimeMajke, java.lang.Boolean majkaZaposlena,
-			java.lang.Long oibMajke, java.lang.String imeOca,
-			java.lang.String prezimeOca, java.lang.Boolean otacZaposlen,
-			java.lang.Long oibOca) {
-		this.idRoditelja = idRoditelja;
+	public Roditelj(java.lang.String imeMajke, java.lang.String prezimeMajke,
+			java.lang.Boolean majkaZaposlena, java.lang.Long oibMajke,
+			java.lang.String imeOca, java.lang.String prezimeOca,
+			java.lang.Boolean otacZaposlen, java.lang.Long oibOca) {
 		this.imeMajke = imeMajke;
 		this.prezimeMajke = prezimeMajke;
 		this.majkaZaposlena = majkaZaposlena;
