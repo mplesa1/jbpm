@@ -8,8 +8,6 @@ public class RangLista implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Id rang liste")
-	private int idRangListe;
 	@org.kie.api.definition.type.Label("Kvota")
 	private int kvota;
 
@@ -17,14 +15,6 @@ public class RangLista implements java.io.Serializable {
 	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
 
 	public RangLista() {
-	}
-
-	public int getIdRangListe() {
-		return this.idRangListe;
-	}
-
-	public void setIdRangListe(int idRangListe) {
-		this.idRangListe = idRangListe;
 	}
 
 	public int getKvota() {
@@ -44,9 +34,7 @@ public class RangLista implements java.io.Serializable {
 		this.podaciZahtjeva = podaciZahtjeva;
 	}
 
-	public RangLista(int idRangListe, int kvota,
-			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
-		this.idRangListe = idRangListe;
+	public RangLista(int kvota, com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
 		this.kvota = kvota;
 		this.podaciZahtjeva = podaciZahtjeva;
 	}
