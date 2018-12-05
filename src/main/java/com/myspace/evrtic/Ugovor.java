@@ -8,26 +8,16 @@ public class Ugovor implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "ID ugovora")
-	private int idUgovora;
-	@org.kie.api.definition.type.Label(value = "Podaci zahtjeva")
+	@org.kie.api.definition.type.Label("Podaci zahtjeva")
 	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
-	@org.kie.api.definition.type.Label(value = "Potpis ravnateljice")
+	@org.kie.api.definition.type.Label("Potpis ravnateljice")
 	private java.lang.String potpisRavnateljice;
-	@org.kie.api.definition.type.Label(value = "Potpis roditelja")
+	@org.kie.api.definition.type.Label("Potpis roditelja")
 	private java.lang.String potpisRoditelja;
-	@org.kie.api.definition.type.Label(value = "Datum ugovora")
+	@org.kie.api.definition.type.Label("Datum ugovora")
 	private java.util.Date datumUgovora;
 
 	public Ugovor() {
-	}
-
-	public int getIdUgovora() {
-		return this.idUgovora;
-	}
-
-	public void setIdUgovora(int idUgovora) {
-		this.idUgovora = idUgovora;
 	}
 
 	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
@@ -63,11 +53,9 @@ public class Ugovor implements java.io.Serializable {
 		this.datumUgovora = datumUgovora;
 	}
 
-	public Ugovor(int idUgovora,
-			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva,
+	public Ugovor(com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva,
 			java.lang.String potpisRavnateljice,
 			java.lang.String potpisRoditelja, java.util.Date datumUgovora) {
-		this.idUgovora = idUgovora;
 		this.podaciZahtjeva = podaciZahtjeva;
 		this.potpisRavnateljice = potpisRavnateljice;
 		this.potpisRoditelja = potpisRoditelja;
