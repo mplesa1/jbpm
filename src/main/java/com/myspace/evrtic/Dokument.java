@@ -8,33 +8,13 @@ public class Dokument implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("ID dokumenta")
-	private int idDokumenta;
-	@org.kie.api.definition.type.Label("Dokument")
-	private String dokument;
 	@org.kie.api.definition.type.Label("Opis dokumenta")
 	private String opisDokumenta;
 
-	@org.kie.api.definition.type.Label(value = "Bodovi dokumenta")
+	@org.kie.api.definition.type.Label("Bodovi dokumenta")
 	private int bodoviDokumenta;
 
 	public Dokument() {
-	}
-
-	public int getIdDokumenta() {
-		return this.idDokumenta;
-	}
-
-	public void setIdDokumenta(int idDokumenta) {
-		this.idDokumenta = idDokumenta;
-	}
-
-	public java.lang.String getDokument() {
-		return this.dokument;
-	}
-
-	public void setDokument(java.lang.String dokument) {
-		this.dokument = dokument;
 	}
 
 	public java.lang.String getOpisDokumenta() {
@@ -53,10 +33,7 @@ public class Dokument implements java.io.Serializable {
 		this.bodoviDokumenta = bodoviDokumenta;
 	}
 
-	public Dokument(int idDokumenta, java.lang.String dokument,
-			java.lang.String opisDokumenta, int bodoviDokumenta) {
-		this.idDokumenta = idDokumenta;
-		this.dokument = dokument;
+	public Dokument(java.lang.String opisDokumenta, int bodoviDokumenta) {
 		this.opisDokumenta = opisDokumenta;
 		this.bodoviDokumenta = bodoviDokumenta;
 	}
