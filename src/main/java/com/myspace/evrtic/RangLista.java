@@ -11,9 +11,6 @@ public class RangLista implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Kvota")
 	private int kvota;
 
-	@org.kie.api.definition.type.Label("Podaci zahtjeva")
-	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
-
 	public RangLista() {
 	}
 
@@ -25,18 +22,8 @@ public class RangLista implements java.io.Serializable {
 		this.kvota = kvota;
 	}
 
-	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
-		return this.podaciZahtjeva;
-	}
-
-	public void setPodaciZahtjeva(
-			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
-		this.podaciZahtjeva = podaciZahtjeva;
-	}
-
-	public RangLista(int kvota, com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
+	public RangLista(int kvota) {
 		this.kvota = kvota;
-		this.podaciZahtjeva = podaciZahtjeva;
 	}
 
 }
