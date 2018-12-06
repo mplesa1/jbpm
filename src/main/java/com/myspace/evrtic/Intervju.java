@@ -8,23 +8,12 @@ public class Intervju implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Podaci zahtjeva")
-	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
 	@org.kie.api.definition.type.Label("Datum intervjua")
 	private java.util.Date datumIntervjua;
 	@org.kie.api.definition.type.Label("Pristali na uvjete")
 	private boolean pristaliNaUvjete;
 
 	public Intervju() {
-	}
-
-	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
-		return this.podaciZahtjeva;
-	}
-
-	public void setPodaciZahtjeva(
-			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
-		this.podaciZahtjeva = podaciZahtjeva;
 	}
 
 	public java.util.Date getDatumIntervjua() {
@@ -43,9 +32,7 @@ public class Intervju implements java.io.Serializable {
 		this.pristaliNaUvjete = pristaliNaUvjete;
 	}
 
-	public Intervju(com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva,
-			java.util.Date datumIntervjua, boolean pristaliNaUvjete) {
-		this.podaciZahtjeva = podaciZahtjeva;
+	public Intervju(java.util.Date datumIntervjua, boolean pristaliNaUvjete) {
 		this.datumIntervjua = datumIntervjua;
 		this.pristaliNaUvjete = pristaliNaUvjete;
 	}
