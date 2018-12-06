@@ -8,8 +8,6 @@ public class Ugovor implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Podaci zahtjeva")
-	private com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva;
 	@org.kie.api.definition.type.Label("Potpis ravnateljice")
 	private java.lang.String potpisRavnateljice;
 	@org.kie.api.definition.type.Label("Potpis roditelja")
@@ -18,15 +16,6 @@ public class Ugovor implements java.io.Serializable {
 	private java.util.Date datumUgovora;
 
 	public Ugovor() {
-	}
-
-	public com.myspace.evrtic.PodaciZahtjeva getPodaciZahtjeva() {
-		return this.podaciZahtjeva;
-	}
-
-	public void setPodaciZahtjeva(
-			com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva) {
-		this.podaciZahtjeva = podaciZahtjeva;
 	}
 
 	public java.lang.String getPotpisRavnateljice() {
@@ -53,10 +42,8 @@ public class Ugovor implements java.io.Serializable {
 		this.datumUgovora = datumUgovora;
 	}
 
-	public Ugovor(com.myspace.evrtic.PodaciZahtjeva podaciZahtjeva,
-			java.lang.String potpisRavnateljice,
+	public Ugovor(java.lang.String potpisRavnateljice,
 			java.lang.String potpisRoditelja, java.util.Date datumUgovora) {
-		this.podaciZahtjeva = podaciZahtjeva;
 		this.potpisRavnateljice = potpisRavnateljice;
 		this.potpisRoditelja = potpisRoditelja;
 		this.datumUgovora = datumUgovora;
