@@ -14,6 +14,9 @@ public class Dokument implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Bodovi dokumenta")
 	private int bodoviDokumenta;
 
+	@org.kie.api.definition.type.Label(value = "Prilozio")
+	private java.lang.Boolean prilozio;
+
 	public Dokument() {
 	}
 
@@ -33,9 +36,19 @@ public class Dokument implements java.io.Serializable {
 		this.bodoviDokumenta = bodoviDokumenta;
 	}
 
-	public Dokument(java.lang.String opisDokumenta, int bodoviDokumenta) {
+	public java.lang.Boolean getPrilozio() {
+		return this.prilozio;
+	}
+
+	public void setPrilozio(java.lang.Boolean prilozio) {
+		this.prilozio = prilozio;
+	}
+
+	public Dokument(java.lang.String opisDokumenta, int bodoviDokumenta,
+			java.lang.Boolean prilozio) {
 		this.opisDokumenta = opisDokumenta;
 		this.bodoviDokumenta = bodoviDokumenta;
+		this.prilozio = prilozio;
 	}
 
 }
